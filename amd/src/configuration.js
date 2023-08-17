@@ -52,7 +52,8 @@ const configureToolbar = (toolbar) => {
 export const configure = (instanceConfig) => {
     // Update the instance configuration to add the Media menu option to the menus and toolbars and upload_handler.
     return {
-        contextmenu: addContextmenuItem(instanceConfig.contextmenu, buttonName),
+        // Current behavior results in a lone sketch right-click menu item, so this is commented out.
+        // contextmenu: addContextmenuItem(instanceConfig.contextmenu, buttonName),
         menu: configureMenu(instanceConfig.menu),
         toolbar: configureToolbar(instanceConfig.toolbar),
 
